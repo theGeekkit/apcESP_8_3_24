@@ -9,23 +9,20 @@ body {
 .header-section {
   display: flex;
   justify-content: space-between;  
-  width: 100%;
+  width: 100vw;
   background-color: #343a40;
   color: white;
-  padding: 0;
-  margin: 0;
+  padding: 0px;
+  margin: 0px;
 }
 
 /* Container inside header section */
 .header-section .container {
   flex: 1;  /* Ensure the container takes all available space */
   flex-direction: row;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  display: flex;  /* Flex display to align content horizontally */
-  justify-content: space-between;  /* Spread out the content */
-  align-items: center;  /* Center content vertically */
+  padding: 0px;
+  margin: 0px;
+  max-width: 100%;
 }
 
 .header-section img {
