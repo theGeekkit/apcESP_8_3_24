@@ -1,93 +1,65 @@
-* {
-  margin: 0;
-  padding: 0;
-}
 body {
-  background-color: lightgrey;
-}
-.range-container {
-  background-color: transparent;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f8f9fa;
 }
 
-.img-fluid {
-  max-height: 450px;
-  max-width: auto;
-}
-
-.range {
-  font-family: Gruppo;
-  font-size:x-large;
-  font-weight: bold;
-}
-
-.navbar-custom {
-  background-image: url("/assets/img/townsendheaderwood.png");
-  background-size: 100%;
-  margin: 0%;
-  padding-bottom: 0%;
+/* Header section styles */
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-content: space-between;
   width: 100%;
+  background-color: #343a40;
+  color: white;
+  padding: 0;
+  margin: 0;
 }
 
-.card {
-  max-height: 600px;
+/* Container inside header section */
+.header-section .container {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.card-img-top {
-  max-height: 525px; /* Adjust the value as needed */
-  object-fit: contain; /* Ensures that the image covers the entire container */
+.header-section img {
+  max-width: 150px;
 }
 
-.about {
-  font-family: Aclonica;
-  background-color: transparent;
+.spotlight-section {
+  padding: 50px 0;
+  background-color: #ffffff;
 }
 
-.carousel-container {
-  padding: 50px;
-  margin: 0%;
-  background-color: transparent;
+.spotlight-section h2,
+.spotlight-section h5 {
+  color: #333;
 }
 
-.big-title {
-  font-size: 55px;
-  font-family: Gruppo;
-  text-align: center;
+.feature-icon {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
 }
 
-.word {
-  min-width: 300px;
-  max-width: 800px;
-  width: 75%;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-  word-break: break-word;
+.feature-section {
+  padding: 50px 0;
+  background-color: #f8f9fa;
 }
 
-.navbar-title {
-  padding-left: 5rem;
-  margin-left: 5rem;
-  text-align: right;
-  font-family: 'Allerta Stencil', sans-serif;
-  font-size: 45px;
+.action-section {
+  background-color: #343a40;
+  color: white;
+  padding: 40px 0;
 }
 
+.action-title {
+  color: #ffcc00;
+}
 
-@media only screen and (max-width: 768px) {
-  .range {
-    flex-direction: column; /* Change to vertical layout */
-    align-items: center; /* Center items */
-  }
-  .word {
-    width: 100%;
-    margin-bottom: 20px; /* Add some spacing between images and text */
-  }
-  h1.big-title {
-    font-size: 1.5rem; /* Adjust font size */
-  }
-  p {
-    font-size: 1rem; /* Adjust font size */
-  }
-  h2 {
-    font-size: 1.25rem; /* Adjust font size */
-  }
+.location-section {
+  padding: 40px 0;
+  background-color: #ffffff;
 }
