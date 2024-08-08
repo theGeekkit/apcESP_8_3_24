@@ -11,13 +11,14 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  background-image:image('assets\img\hero-bg-grayscale-lightened.jpg');
   background-color: #343a40;
   color: white;
   padding: 10px;
 }
 
 .header-section img {
-  max-width: 150px;
+  max-width: 100px;
   height: auto;
 }
 
@@ -27,6 +28,11 @@ body {
   background-color: #ffffff;
 }
 
+.blue-border {
+  background-color: aquamarine;
+  height: 25px;
+  max-width: 100vw;
+}
 /* Carousel styles */
 .carousel {
   position: relative;
