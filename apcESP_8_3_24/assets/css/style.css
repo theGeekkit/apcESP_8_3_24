@@ -1,71 +1,87 @@
 body {
   font-family: 'Open Sans', sans-serif;
   background-color: #f8f9fa;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 /* Header section styles */
 .header-section {
   display: flex;
-  justify-content: space-between;  
-  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   background-color: #343a40;
   color: white;
-  font-family: Gruppo;
-  padding: 0px;
-  margin: 0px;
-}
-
-/* Container inside header section */
-.header-section .container {
-  flex: 1;  /* Ensure the container takes all available space */
-  flex-direction: row;
-  padding: 0px;
-  margin: 0px;
-  max-width: 100%;
-}
-
-.header-section .h1 {
-  font-size: 2rem;
+  padding: 10px;
 }
 
 .header-section img {
   max-width: 150px;
+  height: auto;
 }
 
+/* Spotlight section styles */
 .spotlight-section {
   padding: 50px 0;
   background-color: #ffffff;
 }
 
-.spotlight-section h2,
-.spotlight-section h5 {
-  color: #333;
+/* Carousel styles */
+.carousel {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+  overflow: hidden;
 }
 
-.feature-icon {
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  flex: 0 0 100%;
+  box-sizing: border-box;
+}
+
+.carousel-item img {
   width: 100%;
+  max-width: 800px;
   height: auto;
-  margin-bottom: 15px;
+  display: block;
 }
 
-.feature-section {
-  padding: 50px 0;
-  background-color: #f8f9fa;
-}
-
-.action-section {
-  background-color: #343a40;
+.carousel-caption {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
   color: white;
-  padding: 40px 0;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
 }
 
-.action-title {
-  color: #ffcc00;
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 30px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
 }
 
-.location-section {
-  padding: 40px 0;
-  background-color: #ffffff;
+.carousel-control-prev {
+  left: 10px;
+}
+
+.carousel-control-next {
+  right: 10px;
 }
