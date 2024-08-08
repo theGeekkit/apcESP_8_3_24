@@ -17,9 +17,17 @@
   padding: 10px;
 }
 
+.header-section .h1 {
+  font-family: Allerta Stencil;
+  padding-left: 2rem;
+  margin-left: 2rem;
+  text-align: right;
+  font-size: 0.5rem;
+}
+
 .header-section .image-logo {
   margin: 1.5rem;
-  height: 10%;
+  max-height: 15vh;
   width: auto;
 }
 
@@ -93,21 +101,4 @@
 
 .carousel-control-next {
   right: 10px;
-}
-
-.location-section {
-  background-color: #343a40;
-  color: white;
-  text-align: center;
-  margin-top: 3rem;
-  padding-top: 6rem;
-}
-
-.footer {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 6rem;
-  background-color: #343a40;
-  color: white;
-  text-align: center;
 }
