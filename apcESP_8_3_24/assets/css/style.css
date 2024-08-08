@@ -1,25 +1,26 @@
 body {
   font-family: 'Open Sans', sans-serif;
   background-color: #f8f9fa;
-  margin: 0;
-  padding: 0;
 }
 
 /* Header section styles */
 .header-section {
+  background-image: url("/assets/img/hero-bg-grayscale-lightened.jpg");
+  margin: 0%;
+  padding-bottom: 0%;
+  width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-evenly;
+  align-items: flex-start;
   text-align: center;
-  background-image:image('assets\img\hero-bg-grayscale-lightened.jpg');
-  background-color: #343a40;
   color: white;
   padding: 10px;
 }
 
 .header-section img {
-  max-width: 100px;
-  height: auto;
+  margin: 1.5rem;
+  height: 10%;
+  width: auto;
 }
 
 /* Spotlight section styles */
@@ -29,14 +30,13 @@ body {
 }
 
 .blue-border {
-  background-color: aquamarine;
+  background-color: rgb(52, 129, 218);
   height: 25px;
   max-width: 100vw;
 }
 /* Carousel styles */
 .carousel {
   position: relative;
-  max-width: 800px;
   margin: auto;
   overflow: hidden;
 }
@@ -47,15 +47,19 @@ body {
 }
 
 .carousel-item {
-  flex: 0 0 100%;
-  box-sizing: border-box;
+  background-color: black;
+  display: block;
+  width: 100%;
 }
 
 .carousel-item img {
-  width: 100%;
-  max-width: 800px;
-  height: auto;
-  display: block;
+  object-fit: fill;
+  height: 500px;
+  overflow: hidden;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+  border-right: 50px solid black;
+  border-left: 50px solid black;
 }
 
 .carousel-caption {
