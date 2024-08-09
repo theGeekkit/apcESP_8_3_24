@@ -21,7 +21,6 @@
   font-family: Allerta Stencil;
   padding-left: 2rem;
   margin-left: 2rem;
-  text-align: right;
   font-size: 0.5rem;
 }
 
@@ -37,10 +36,14 @@
   background-color: #ffffff;
 }
 
-.blue-border {
-  background-color: rgb(52, 129, 218);
-  height: 25px;
+.church {
   width: 100vw;
+  background-image: url('{% static "assets/img/hero-bg-grayscale-lightened.jpg" %}');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 200px;
+  color: white;
 }
 /* Carousel styles */
 .carousel {
