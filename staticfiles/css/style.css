@@ -1,10 +1,5 @@
 /* Header section styles */
 .header-section {
-  background-image: url("/assets/img/hero-bg-grayscale-lightened.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  min-height: 100px;
   margin: 0%;
   padding-bottom: 0%;
   width: 100%;
@@ -36,10 +31,15 @@
   background-color: #ffffff;
 }
 
-.blue-border {
-  background-color: rgb(52, 129, 218);
-  height: 25px;
-  width: 100vw;
+.church {
+  width: 100%;
+  background-image: url('../img/hero-bg-grayscale-lightened.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 300px;
+  height: 100vh;
+  color: white;
 }
 /* Carousel styles */
 .carousel {
@@ -49,7 +49,6 @@
 }
 
 .carousel-inner {
-  display: flex;
   transition: transform 0.5s ease-in-out;
 }
 

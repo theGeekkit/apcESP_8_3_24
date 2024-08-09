@@ -1,32 +1,24 @@
 /* Header section styles */
-.header-section {
-  background-image: url("/assets/img/hero-bg-grayscale-lightened.jpg");
-  background-size: cover;
+.header {
+  background-color: #97afd8;
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 100px;
-  margin: 0%;
-  padding-bottom: 0%;
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  text-align: center;
+  background-size: contain;
+  min-height: 40vh;
+  height: 50vh;
   color: white;
-  padding: 10px;
+  width: 100%;
 }
 
-.header-section .h1 {
+.header .h1 {
   font-family: Allerta Stencil;
   padding-left: 2rem;
   margin-left: 2rem;
   font-size: 0.5rem;
 }
 
-.header-section .image-logo {
-  margin: 1.5rem;
-  max-height: 15vh;
+.navbar-brand .img {
+  max-height: 10vh;
   width: auto;
 }
 
@@ -36,15 +28,35 @@
   background-color: #ffffff;
 }
 
+.phone i {
+  font-size: 1.5rem; /* Adjust icon size */
+  margin-bottom: 0.5rem; /* Space between icon and text */
+}
+.phone a {
+  display: block; /* Ensure each link takes up the full width */
+  text-decoration: none; /* Remove underline */
+}
+.phone a:hover {
+  text-decoration: underline; /* Optional: underline on hover */
+}
+
 .church {
-  width: 100vw;
-  background-image: url('{% static "assets/img/hero-bg-grayscale-lightened.jpg" %}');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  min-height: 200px;
+  background-color:#97afd8;
+  height: 20vh;
+  margin: 0%;
+  padding-bottom: 0%;
   color: white;
 }
+
+
+@media (max-width: 768px) {
+  .church {
+    height: 20vh; /* Adjust height for smaller screens */
+    padding-top: 1;
+    margin-top: 1;
+  }
+}
+
 /* Carousel styles */
 .carousel {
   position: relative;
@@ -53,7 +65,6 @@
 }
 
 .carousel-inner {
-  display: flex;
   transition: transform 0.5s ease-in-out;
 }
 
