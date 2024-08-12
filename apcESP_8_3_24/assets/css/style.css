@@ -28,6 +28,10 @@
   background-color: #97afd8;
 }
 
+body {
+  background-color: #dcdee5;
+}
+
 .phone i {
   font-size: 1.5rem; /* Adjust icon size */
   margin-bottom: 0.5rem; /* Space between icon and text */
