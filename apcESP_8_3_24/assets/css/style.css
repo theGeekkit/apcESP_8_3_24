@@ -25,7 +25,7 @@
 /* Spotlight section styles */
 .spotlight-section {
   padding: 50px 0;
-  background-color: #ffffff;
+  background-color: #97afd8;
 }
 
 .phone i {
@@ -42,7 +42,7 @@
 
 .church {
   background-color:#97afd8;
-  height: 15vh;
+  height: 20vh;
   margin: 0%;
   padding-bottom: 0%;
   color: white;
@@ -53,7 +53,7 @@
   .church {
     height: 20vh; /* Adjust height for smaller screens */
     padding-top: 1;
-    margin-top: 1;
+    margin-top: 1;  
   }
 }
 
@@ -64,7 +64,7 @@
 }
 
 .carousel-item {
-  background-color: black; /* Background color for the slides */
+  background-color: #97afd8; /* Background color for the slides */
   position: relative;
 }
 
