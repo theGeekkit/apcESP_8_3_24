@@ -120,10 +120,15 @@
   <!-- Action Section -->
   <div class="action-section text-center" style="background-color: #dcdee5; border:0 !important">
     <div class="container" style="background-color: #dcdee5;">
-      <h3 class="action-title">FECHAS 2024</h3>
+      <h3 class="action-title">Eventos <span id="current-year"></span></h3>
       <ul class="list-unstyled mt-3">
-        <li>Conferencia FUEGO - 22-23 de Noviembre - Ubicación: Kansas City, MO</li>
+        <li>
+          {% comment %} <a id="event-link" href="\img\FUEGO2024.pdf">
+            <img src="{% static 'img\fuego2024.png' %}" alt="Event Image" id="event-image"/>
+          </a> {% endcomment %}
+        </li>
       </ul>
+      <p id="no-events-message" style="display: none;">No upcoming events at this time</p>
     </div>
   </div>
 
@@ -132,7 +137,7 @@
     <div class="container d-flex flex-column flex-lg-column align-items-center text-center">
       <h4 class="font-weight-bold" style="font-family: Gruppo;">Ubicación</h4>
       <p>901 Barracksview Rd<br>St. Louis, MO 63125<br>Tel: 314-956-2037</p>
-      <p><span style="font-family: Gruppo; font-weight: bold;">Pastor: Randall Clark</span></p>
+      <p><span style="font-family: Gruppo; font-weight: bold;">Espanol Iglesia Pastor: Randall Clark</span></p>
       <p>© 2024 Iglesia Pentecostal Apostólica. Todos los derechos reservados.</p>
     </div>
   </div>
@@ -153,5 +158,18 @@
         keyboard: true
       });
     });
+  </script>
+  <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
+  <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+
+    // Check if the <a> element is empty
+    const eventLink = document.getElementById('event-link');
+    if (!eventLink.href || eventLink.getAttribute('img') === '') {
+      eventLink.style.display = 'none'; // Hide the empty <a> element
+      document.getElementById('no-events-message').style.display = 'block'; // Show the message
+    }
   </script>
   {% endblock %}

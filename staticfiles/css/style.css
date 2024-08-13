@@ -1,102 +1,78 @@
 /* Header section styles */
-.header-section {
-  margin: 0%;
-  padding-bottom: 0%;
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  text-align: center;
+.header {
+  background-color: #97afd8;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  min-height: 40vh;
+  height: 50vh;
   color: white;
-  padding: 10px;
+  width: 100%;
 }
 
-.header-section .h1 {
+.header .h1 {
   font-family: Allerta Stencil;
   padding-left: 2rem;
   margin-left: 2rem;
   font-size: 0.5rem;
 }
 
-.header-section .image-logo {
-  margin: 1.5rem;
-  max-height: 15vh;
+.navbar-brand .img {
+  max-height: 10vh;
   width: auto;
 }
 
 /* Spotlight section styles */
 .spotlight-section {
   padding: 50px 0;
-  background-color: #ffffff;
+  background-color: #97afd8;
+}
+
+body {
+  background-color: #dcdee5;
+}
+
+.phone i {
+  font-size: 1.5rem; /* Adjust icon size */
+  margin-bottom: 0.5rem; /* Space between icon and text */
+}
+.phone a {
+  display: block; /* Ensure each link takes up the full width */
+  text-decoration: none; /* Remove underline */
+}
+.phone a:hover {
+  text-decoration: underline; /* Optional: underline on hover */
 }
 
 .church {
-  width: 100%;
-  background-image: url('../img/hero-bg-grayscale-lightened.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  min-height: 300px;
-  height: 100vh;
+  background-color:#97afd8;
+  height: 20vh;
+  margin: 0%;
+  padding-bottom: 0%;
   color: white;
 }
+
+
+@media (max-width: 768px) {
+  .church {
+    height: 20vh; /* Adjust height for smaller screens */
+    padding-top: 1;
+    margin-top: 1;
+  }
+}
+
 /* Carousel styles */
 .carousel {
   position: relative;
   margin: auto;
-  overflow: hidden;
-}
-
-.carousel-inner {
-  transition: transform 0.5s ease-in-out;
 }
 
 .carousel-item {
-  background-color: black;
-  width: 100%;
+  background-color: #97afd8; /* Background color for the slides */
+  position: relative;
+}
+.carousel-item .img {
+  background-color: transparent;
 }
 
-.carousel-item img {
-  object-fit: fill;
-  height: 500px;
-  overflow: hidden;
-  border-top: 5px solid black;
-  border-bottom: 5px solid black;
-  border-right: 50px solid black;
-  border-left: 50px solid black;
-}
 
-.carousel-caption {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  color: white;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 10px;
-  border-radius: 5px;
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  font-size: 30px;
-  padding: 10px;
-  border: none;
-  cursor: pointer;
-  z-index: 1;
-}
-
-.carousel-control-prev {
-  left: 10px;
-}
-
-.carousel-control-next {
-  right: 10px;
-}
