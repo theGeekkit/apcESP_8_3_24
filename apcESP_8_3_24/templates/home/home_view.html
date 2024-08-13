@@ -1,6 +1,7 @@
 {% load static %}
+
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 <head>
   <title>Iglesia Pentecostal Apostólica</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -9,11 +10,50 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil&display=swap"/>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gruppo&display=swap"/>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"/>   
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"/>
   <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
+
+  <style>
+    header {
+      background-image: url('/assets/img/hero-bg-grayscale-lightened.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100vw;
+      height: 50vh; /* Adjust height for the header */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .navbar-brand img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        height: 30vh; /* Smaller height for mobile screens */
+      }
+
+      .navbar-brand img {
+        width: 60vw; /* Adjust logo size for mobile */
+      }
+
+      .phone, .address {
+        text-align: center;
+        margin-bottom: 10px;
+      }
+
+      .phone a {
+        display: block;
+        margin-bottom: 5px;
+      }
+    }
+  </style>
 </head>
-<body>
-  <header class="d-flex flex-lg-row align-items-center justify-content-center text-light" style="background-image: url('/assets/img/hero-bg-grayscale-lightened.jpg');">
+<body style="background-color:#dcdee5 !important">
+  <header class="d-flex flex-lg-row align-items-center justify-content-center text-light">
     <div class="phone d-flex-column pr-4 pl-4 m-2 flex-sm-wrap">
       <i class="fa fa-phone"></i>
       <a href="tel:+13148948130" style="color: white;">(314) 894-8130 Inglés</a>
@@ -21,23 +61,20 @@
       <a href="tel:+13149562037" style="color: white;">(314) 956-2037 Español</a>
     </div>
     <a class="navbar-brand pr-4 pl-4" rel="home" aria-current="page">
-      <img src="{% static 'img/ipa_logo_and_name_clear_background.png' %}" class="pd-3" alt="Apostolic Pentecostal Church" style="width: 22vw;">
+      <img src="{% static 'img/ipa_logo_and_name_clear_background.png' %}" alt="Apostolic Pentecostal Church">
     </a>
     <div class="address pr-2 pl-2 m-2">
-      <i class="fa fa-map-marker">
-      </i> <address> 901 Barracksview Road<br> St. Louis, MO 63125
-      </address>
+      <i class="fa fa-map-marker"></i>
+      <address>901 Barracksview Road<br>St. Louis, MO 63125</address>
     </div>
   </header>
 
-  <div class="church d-flex text-lg-center flex-column align-items-center">
+  <div class="church d-flex text-lg-center flex-column align-items-center p-3">
     <h2 class="pt-2 mt-2 pb-2 mb-2">¡Únete a nuestra comunidad!</h2>
     <h5>Ven y adora con nosotros cada domingo por la tarde a las 3:00 PM.</h5>
     <p>Miércoles noche culto de adoración comienza a las 6:00 PM</p>
-    <span>
-    </span>
+    <span></span>
   </div>
-
 
   <!-- Spotlight Section with Carousel -->
   <div class="spotlight-section" style="background-color: #dcdee5;">
@@ -49,20 +86,20 @@
         <button type="button" data-bs-target="#communityCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
         <button type="button" data-bs-target="#communityCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
       </div>
-  
+
       <!-- Carousel Items -->
-      <div class="carousel-inner" style="height: 50vh; background-color: #dcdee5;">
-        <div class="carousel-item active">
-          <img src="{% static 'img/20231006_193147.jpg' %}" class="d-block w-100" alt="Slide 1" style="width: auto; object-fit: contain;">
+      <div class="carousel-inner" style="height: 50vh;">
+        <div class="carousel-item active bg-white">
+          <img src="{% static 'img/20231006_193147.jpg' %}" class="d-block w-100" alt="Slide 1" style="width: auto; object-fit: contain; background-color: #dcdee5; border: 0 !important;">
         </div>
         <div class="carousel-item">
-          <img src="{% static 'img/20231006_201756.jpg' %}" class="d-block w-100" alt="Slide 2" style="width: auto; object-fit: contain;">
+          <img src="{% static 'img/20231006_201756.jpg' %}" class="d-block w-100" alt="Slide 2" style="width: auto; object-fit: contain; background-color: #dcdee5; border: 0 !important;">
         </div>
-        <div class="carousel-item">
-          <img src="{% static 'img/FB_IMG_1723142764156.jpg' %}" class="d-block w-100" alt="Slide 3" style="width: auto; object-fit: contain;">
+        <div class="carousel-item bg-#dcdee5">
+          <img src="{% static 'img/FB_IMG_1723142764156.jpg' %}" class="d-block w-100" alt="Slide 3" style="width: auto; object-fit: contain; background-color: #dcdee5; border: 0 !important;">
         </div>
-        <div class="carousel-item">
-          <img src="{% static 'img/FB_IMG_1723142750779.jpg' %}" class="d-block w-100" alt="Slide 4" style="width: auto; object-fit: contain;">
+        <div class="carousel-item bg-#dcdee5">
+          <img src="{% static 'img/FB_IMG_1723142750779.jpg' %}" class="d-block w-100" alt="Slide 4" style="width: auto; object-fit: contain; background-color: #dcdee5; border: 0 !important;">
         </div>
       </div>
 
@@ -78,12 +115,10 @@
     </div>
   </div>
 
-
-
   <!-- Feature Section -->
 
   <!-- Action Section -->
-  <div class="action-section text-center" style="background-color: #dcdee5;">
+  <div class="action-section text-center" style="background-color: #dcdee5; border:0 !important">
     <div class="container" style="background-color: #dcdee5;">
       <h3 class="action-title">FECHAS 2024</h3>
       <ul class="list-unstyled mt-3">
@@ -92,13 +127,25 @@
     </div>
   </div>
 
+  <!-- Footer -->
+  <div class="footer justify-content-center p-0 m-0" style="background-color: #4e7dba !important; color: white; border:0 !important">
+    <div class="container d-flex flex-column flex-lg-column align-items-center text-center">
+      <h4 class="font-weight-bold" style="font-family: Gruppo;">Ubicación</h4>
+      <p>901 Barracksview Rd<br>St. Louis, MO 63125<br>Tel: 314-956-2037</p>
+      <p><span style="font-family: Gruppo; font-weight: bold;">Pastor: Randall Clark</span></p>
+      <p>© 2024 Iglesia Pentecostal Apostólica. Todos los derechos reservados.</p>
+    </div>
+  </div>
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-
-  {% block extra_javascript %}
-
-  <script>
+  <!-- Bootstrap JS and dependencies from CDN -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+</body>
+</html>
+{% block extra_javascript %}
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
     $(document).ready(function () {
       $('#communityCarousel').carousel({
         interval: 5000,  // Adjust the interval as needed
@@ -108,19 +155,3 @@
     });
   </script>
   {% endblock %}
-
-  <!-- Footer -->
-  <div class="footer justify-content-center mt-lg-4 pt-lg-4 pb-0 m-0"style="background-color: #4e7dba; color: white;">
-    <div class="container d-flex flex-column flex-lg-column align-items-center text-center">
-      <h4 class="font-weight-bold" style="font-family: Gruppo;">Ubicación</h4>
-      <p>901 Barracksview Rd<br>St. Louis, MO 63125<br>Tel: 314-956-2037</p>
-      <p><span style="font-family: Gruppo; font-weight: bold;">Pastor: Randall Clark</span></p>
-      <p>© 2024 Iglesia Pentecostal Apostólica. Todos los derechos reservados.</p>
-    </div>
-  </div>
-  <!-- Bootstrap JS and dependencies from CDN -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js"></script>
-</body>
-</html>
