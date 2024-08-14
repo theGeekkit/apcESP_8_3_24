@@ -68,8 +68,7 @@ body {
 }
 
 .carousel-item {
-  background-color: #97afd8; /* Background color for the slides */
-  position: relative;
+  background-color: #97afd8;
 }
 .carousel-item .img {
   background-color: transparent;
@@ -79,9 +78,5 @@ body {
   width: 100vw;
 }
 
-@media (min-width: 992px) {
-  #event-image {
-    width: 50vw;
-  }
-}
+
 

@@ -68,11 +68,15 @@ body {
 }
 
 .carousel-item {
-  background-color: #97afd8; /* Background color for the slides */
-  position: relative;
+  background-color: #97afd8;
 }
 .carousel-item .img {
   background-color: transparent;
 }
+
+#event-image {
+  width: 100vw;
+}
+
 
 
