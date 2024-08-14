@@ -75,4 +75,13 @@ body {
   background-color: transparent;
 }
 
+#event-image {
+  width: 100vw;
+}
+
+@media (min-width: 992px) {
+  #event-image {
+    width: 50vw;
+  }
+}
 
