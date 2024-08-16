@@ -70,9 +70,6 @@ body {
 .carousel-item {
   background-color: #97afd8;
 }
-.carousel-item .img {
-  background-color: transparent;
-}
 
 #event-image {
   width: 100vw;

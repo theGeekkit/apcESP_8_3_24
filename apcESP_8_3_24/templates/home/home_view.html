@@ -1,5 +1,3 @@
-{% load static %}
-
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
@@ -11,7 +9,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gruppo&display=swap"/>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"/>
-  <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
+  <link rel="stylesheet" href="/assets/css/style.css"/>
 
   <style>
     header {
@@ -61,7 +59,7 @@
       <a href="tel:+13149562037" style="color: white;">(314) 956-2037 Español</a>
     </div>
     <a class="navbar-brand pr-4 pl-4" rel="home" aria-current="page">
-      <img src="{% static 'img/ipa_logo_and_name_clear_background.png' %}" alt="Apostolic Pentecostal Church">
+      <img src="/assets/img/ipa_logo_and_name_clear_background.png" alt="Apostolic Pentecostal Church">
     </a>
     <div class="address pr-2 pl-2 m-2">
       <i class="fa fa-map-marker"></i>
@@ -69,15 +67,16 @@
     </div>
   </header>
 
-  <div class="church d-flex text-lg-center flex-column align-items-center p-3">
-    <h2 class="pt-2 mt-2 pb-2 mb-2">Join our Community!</h2>
+  <div class="church d-flex text-lg-center flex-column align-items-center p-3" style="background-image: url('/assets/img/praise-hands.jpg'); background-size: cover;
+      background-position: center; background-repeat: no-repeat; color: black !important;">
+    <h2 class="p-0 m-0">Join our Community!</h2>
     <h5>Come and worship with us every Sunday at 3:00 PM.</h5>
     <p>Wednesday night bible study starts at 7:30 PM</p>
     <span></span>
   </div>
 
   <!-- Spotlight Section with Carousel -->
-  <div class="spotlight-section justify-content-center" style="background-color: #dcdee5 !important;">
+  <div class="spotlight-section justify-content-center text-center pt-0 mt-0" style="width: 100vw; background-color: #dcdee5 !important;">
     <div id="communityCarousel" class="carousel slide" data-bs-ride="carousel">
       <!-- Carousel Indicators -->
       <div class="carousel-indicators">
@@ -88,18 +87,18 @@
       </div>
 
       <!-- Carousel Items -->
-      <div class="carousel-inner d-flex flex-column" style="height: 50vh; background-color: #dcdee5;">
-        <div class="carousel-item active">
-          <img src="{% static 'img/20231006_193147.jpg' %}" class="d-block mx-auto img-fluid" alt="Slide 1" style="object-fit:fill; background-color: #dcdee5; border: 0 !important;">
+      <div class="carousel-inner " style="max-height:455px; background-color: #dcdee5; border:0 !important; margin:0 !important;">
+        <div class="carousel-item active col-md-4 mb-2">
+          <img src="/assets/img/20231006_193147.jpg" class="img-fluid h-100" alt="Slide 1" style="background-color: #dcdee5; border: 0 !important;">
         </div>
-        <div class="carousel-item">
-          <img src="{% static 'img/20231006_201756.jpg' %}" class="d-block mx-auto img-fluid" alt="Slide 2" style="object-fit:fill; background-color: #dcdee5; border: 0 !important;">
+        <div class="carousel-item bg-#dcdee5 col-md-4 mb-2">
+          <img src="/assets/img/20231006_201756.jpg" class="img-fluid h-100" alt="Slide 2" style="background-color: #dcdee5; border: 0 !important;">
         </div>
-        <div class="carousel-item bg-#dcdee5">
-          <img src="{% static 'img/FB_IMG_1723142764156.jpg' %}" class="d-block mx-auto img-fluid" alt="Slide 3" style="background-color: #dcdee5; border: 0 !important;">
+        <div class="carousel-item bg-#dcdee5 col-md-4 mb-2">
+          <img src="/assets/img/FB_IMG_1723142764156.jpg" class="img-fluid h-100" alt="Slide 3" style="background-color: #dcdee5; border: 0 !important;">
         </div>
-        <div class="carousel-item bg-#dcdee5">
-          <img src="{% static 'img/FB_IMG_1723142750779.jpg' %}" class="d-block mx-auto img-fluid" alt="Slide 4" style="background-color: #dcdee5; border: 0 !important;">
+        <div class="carousel-item bg-#dcdee5 col-md-4 mb-2">
+          <img src="/assets/img/FB_IMG_1723142750779.jpg" class="img-fluid h-100" alt="Slide 4" style="background-color: #dcdee5; border: 0 !important;">
         </div>
       </div>
 
@@ -123,8 +122,8 @@
     <h3 class="action-title">Eventos <span id="current-year"></span></h3>
     <ul class="list-unstyled mt-3">
       <li>
-        <a id="event-link" href="\img\FUEGO2024.pdf">
-          <img src="{% static 'img/fuego2024.png' %}" alt="Event Image" id="event-image" class="img-fluid" style="width: 100vw;" />
+        <a id="event-link" href="/assets/img/FUEGO2024.pdf">
+          <img src="/assets/img/fuego2024.png" alt="Event Image" id="event-image" class="img-fluid" style="width: 100vw;" />
         </a>
       </li>
     </ul>

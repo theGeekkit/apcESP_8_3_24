@@ -46,16 +46,17 @@ body {
 
 .church {
   background-color:#97afd8;
-  height: 20vh;
+  height: 50vh;
   margin: 0%;
   padding-bottom: 0%;
-  color: white;
+  color: rgb(0, 0, 0);
+  max-height: 45%;
 }
 
 
 @media (max-width: 768px) {
   .church {
-    height: 20vh; /* Adjust height for smaller screens */
+    height: 30vh; /* Adjust height for smaller screens */
     padding-top: 1;
     margin-top: 1;
   }
@@ -69,9 +70,6 @@ body {
 
 .carousel-item {
   background-color: #97afd8;
-}
-.carousel-item .img {
-  background-color: transparent;
 }
 
 #event-image {
