@@ -45,7 +45,7 @@ body {
 }
 
 .church {
-  background-color:#97afd8;
+  background-image: url('/assets/img/praise-hands.jpg');
   height: 50vh;
   margin: 0%;
   padding-bottom: 0%;
@@ -56,7 +56,7 @@ body {
 
 @media (max-width: 768px) {
   .church {
-    height: 30vh; /* Adjust height for smaller screens */
+    height: 40vh; /* Adjust height for smaller screens */
     padding-top: 1;
     margin-top: 1;
   }
