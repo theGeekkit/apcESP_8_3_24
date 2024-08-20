@@ -1,15 +1,52 @@
 /* Header section styles */
 .header {
-  background-color: #97afd8;
-  background-repeat: no-repeat;
+  background-image: url('/assets/img/hero-bg-grayscale-lightened.jpg');
+  background-size: cover;
   background-position: center;
-  background-size: contain;
-  min-height: 40vh;
-  height: 50vh;
-  color: white;
-  width: 100%;
-  position: relative;
-  z-index: 1;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 50vh; /* Adjust height for the header */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+  .header {
+    font-size: 30px; /* Smaller size on small screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    font-size: 15px; /* Even smaller size on extra small screens */
+  }
+}
+
+.navbar-brand img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  header {
+    height: 30vh; /* Smaller height for mobile screens */
+  }
+
+  .navbar-brand img {
+    width: 60vw; /* Adjust logo size for mobile */
+  }
+
+  .phone, .address {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .phone a {
+    display: block;
+    margin-bottom: 5px;
+  }
 }
 
 .basic-header__title-wrapper {
