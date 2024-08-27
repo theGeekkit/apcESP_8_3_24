@@ -11,53 +11,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"/>
   <link rel="stylesheet" href="/assets/css/style.css"/>
 
-  <style>
-    header {
-      background-image: url('/assets/img/hero-bg-grayscale-lightened.jpg') !important;
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      width: 100vw;
-      height: 50vh; /* Adjust height for the header */
-      display: flex;
-      align-items: center;
-      justify-content: space-evenly;
-      font-size: 2rem;
-    }
 
-    @media (max-width: 768px) {
-      header {
-        font-size: 30px;
-        height: 30vh;
-      }
-    }
-
-    @media (max-width: 576px) {
-      header {
-        font-size: 15px; /* Even smaller size on extra small screens */
-      }
-    }
-
-    .navbar-brand img {
-      max-width: 100%;
-      height: auto;
-    }
-
-      .navbar-brand img {
-        width: 60vw; /* Adjust logo size for mobile */
-      }
-
-      .phone, .address {
-        text-align: center;
-        margin-bottom: 10px;
-      }
-
-      .phone a {
-        display: block;
-        margin-bottom: 5px;
-      }
-    
-  </style>
 </head>
 <body style="background-color:#dcdee5 !important">
   <header class="d-flex flex-lg-row align-items-center justify-content-evenly text-light">
@@ -75,22 +29,22 @@
       <address>901 Barracksview Road<br>St. Louis, MO 63125</address>
     </div>
   </header>
-  <div class="basic-header__title-wrapper" style="position: relative;">
+  <div class="basic-header__title-wrapper">
     <div class="basic-header__title" style="font-family: Gruppo; font-style: italic; font-weight: 700;">
       <h1 class="large-title">
         <!-- Welcome Section -->
-        <span class="background-banner" style="position: relative; z-index: 2; display: inline-block;">
+        <span class="background-banner">
           <svg width="301.80731201171875" height="38.5" class="svg-banner">
-            <rect x="10" y="10" width="100%" height="100%" style="fill: rgb(174, 128, 66);"></rect>
+            <rect x="10" y="10" width="100%" height="100%" style="fill: rgb(151, 175, 216);"></rect>
           </svg>
           Welcome
         </span>
       </h1>
       <h1 class="large-title" style="margin-top: 0;">
         <!-- To Apostolic Pentecostal Church Section -->
-        <span class="background-banner" style="position: relative; z-index: 2; display: inline-block;">
+        <span class="background-banner">
           <svg width="535.40625" height="38.5" class="svg-banner">
-            <rect x="3" y="3" width="100%" height="100%" style="fill: rgb(174, 128, 66);"></rect>
+            <rect x="3" y="3" width="100%" height="100%" style="fill: rgb(151, 175, 216);"></rect>
           </svg>
           To Apostolic Pentecostal Church
         </span>
@@ -157,9 +111,13 @@
   </div>
 
   <!-- Action Section -->
-<div class="action-section text-center justify-content-center" style="background-color: #dcdee5; border:0 !important; margin:0 !important;">
+<div class="action-section text-center justify-content-center" style="background-color: #dcdee5; border:0 !important; margin:0 !important; font-family: Aclonica;">
   <div class="container align-items-center d-flex flex-column" style="background-color: #dcdee5;">
-    <h3 class="action-title" style="font-size: xx-large; filter: drop-shadow(16px 16px #4e7dba);">Events <span id="current-year"></span></h3>
+    <h3 class="action-title" style="font-size: xx-large; font-style:italic; background-color: #97afd8 !important;">
+      Events
+      <span id="current-year">
+    </span>
+  </h3>
     <ul class="list-unstyled mt-3">
       <li>
         <a id="event-link" href="/assets/img/FUEGO2024.pdf">
