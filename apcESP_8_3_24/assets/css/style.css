@@ -32,6 +32,26 @@ header {
     display: block;
     margin-bottom: 5px;
   }
+
+  .basic-header__title-wrapper {
+    top: 200px; /* Adjust for smaller screens */
+  }
+
+  .carousel-inner {
+    max-height: 390px !important;
+  }
+
+  .large-title {
+    font-size: medium;
+  }
+
+  .svg-banner {
+    height: 20px !important;
+  }
+
+  .action-title {
+    font-size: 2rem !important;
+  }
 }
 
 @media (max-width: 576px) {
@@ -64,19 +84,15 @@ header {
 
 @media (max-width: 430px) {
   .basic-header__title-wrapper {
-    top: 180px; /* Adjust for smaller screens */
+    top: 150px; /* Adjust for smaller screens */
   }
 }
 
-@media (max-width: 768px) {
-  .basic-header__title-wrapper {
-    top: 200px; /* Adjust for smaller screens */
-  }
-}
 
 .large-title {
   position: relative;
   z-index: 2; /* Ensure the title is above everything */
+  text-shadow: 2px 2px 5px rgb(248, 246, 246);
 }
 
 .background-banner {
@@ -106,7 +122,6 @@ header {
 /* Spotlight section styles */
 .spotlight-section {
   padding: 50px 0;
-  background-color: #97afd8;
 }
 
 body {
@@ -126,12 +141,20 @@ body {
 }
 
 .church {
-  background-image: url('/assets/img/praise-hands.jpg');
+  background-image: url('/assets/img/new_praise_hands_gradient.png');
+  background-color: #97afd8;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex-direction: column !important;
   height: 50vh;
   margin: 0%;
   padding-bottom: 0%;
   color: rgb(0, 0, 0);
   max-height: 35%;
+  opacity: 0.6;
+  max-height:400px;
+  color: black !important;
 }
 
 
@@ -150,12 +173,27 @@ body {
 }
 
 .carousel-item {
-  background-color: #97afd8;
+  max-height:655px;
+  background-image: linear-gradient( #dcdee5,#97afd8,#dcdee5);
 }
 
 #event-image {
   width: 100vw;
 }
 
+.action-section {
+  margin-bottom: 4rem;
+}
 
+.action-title {
+  background-image: linear-gradient( #dcdee5,#97afd8,#dcdee5);
+  font-size: 5rem;
+  font-style:italic;
+}
+
+.footer {
+  background-image: linear-gradient(#dcdee5,#4e7dba);
+  margin-top: 4rem;
+  padding-top: 2rem;
+}
 

@@ -1,6 +1,6 @@
 /* Header section styles */
-.header {
-  background-image: url('/assets/img/hero-bg-grayscale-lightened.jpg');
+header {
+  background-image: url('/assets/img/hero-bg-grayscale-lightened.jpg') !important;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -13,25 +13,10 @@
 }
 
 @media (max-width: 768px) {
-  .header {
-    font-size: 30px; /* Smaller size on small screens */
-  }
-}
-
-@media (max-width: 576px) {
-  .header {
-    font-size: 15px; /* Even smaller size on extra small screens */
-  }
-}
-
-.navbar-brand img {
-  max-width: 100%;
-  height: auto;
-}
-
-@media (max-width: 768px) {
   header {
     height: 30vh; /* Smaller height for mobile screens */
+    font-size: 20px;
+    height: 30vh;
   }
 
   .navbar-brand img {
@@ -49,9 +34,21 @@
   }
 }
 
+@media (max-width: 576px) {
+  header {
+    font-size: 15px; /* Even smaller size on extra small screens */
+  }
+}
+
+.navbar-brand img {
+  max-width: 100%;
+  height: auto;
+}
+
+
 .basic-header__title-wrapper {
   position: absolute; /* Allows for overlap */
-  top: 340px; /* Adjust this value as needed to control the amount of overlap */
+  top: 390px; /* Adjust this value as needed to control the amount of overlap */
   left: 25px;
   right: 0;
   z-index: 3; /* Ensure it's on top of the header */
@@ -59,14 +56,38 @@
   max-height: 100px;
 }
 
+@media (max-width: 360px) {
+  .basic-header__title-wrapper {
+    top: 150px;
+  }
+}
+
+@media (max-width: 430px) {
+  .basic-header__title-wrapper {
+    top: 180px; /* Adjust for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .basic-header__title-wrapper {
+    top: 200px; /* Adjust for smaller screens */
+  }
+}
+
 .large-title {
   position: relative;
   z-index: 2; /* Ensure the title is above everything */
 }
 
+.background-banner {
+  position: relative; /* Position relative to control z-index */
+  z-index: 1; /* Lower than the title wrapper */
+  display: inline-block;
+}
+
 .background-banner svg {
   display: block;
-  width: 1%;
+  width: 100%;
   height: auto;
 }
 
