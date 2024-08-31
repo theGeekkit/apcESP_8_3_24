@@ -65,13 +65,14 @@ header {
 }
 
 .navbar-brand img {
-  max-width: 45vw;
+  max-width: 50vw;
   height: auto;
+  width: 10vw;
 }
 
 @media (max-width: 768px) {
   .navbar-brand img {
-    width: 20vw; /* Adjust logo size for mobile */
+    width: 15vw; /* Adjust logo size for mobile */
   }
 
 }
@@ -147,7 +148,7 @@ header {
 }
 
 .navbar-brand .img {
-  max-height: 10vh;
+  max-height: 20vh;
   width: auto;
 }
 
@@ -204,19 +205,19 @@ body {
 }
 
 .action-section {
-  margin-bottom: 4rem;
+  background-image: linear-gradient( #dcdee5,#97afd8,#4e7dba);
+  padding-bottom: 4rem;
 }
 
 .action-title {
-  background-image: linear-gradient( #dcdee5,#97afd8,#dcdee5);
   font-size: 5rem;
   font-style:italic;
 }
 
 .footer {
-  background-image: linear-gradient(#dcdee5,#4e7dba);
+  background-color:#4e7dba;
   margin-top: 4rem;
-  padding-top: 2rem; 
+  padding-top: 2rem;
   color: black;
   font-weight: 500;
   border:0 !important
