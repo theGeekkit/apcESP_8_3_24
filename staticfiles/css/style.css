@@ -4,6 +4,7 @@ header {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  opacity: 0.6;
   width: 100vw;
   height: 50vh; /* Adjust height for the header */
   display: flex;
@@ -19,10 +20,6 @@ header {
     height: 30vh;
   }
 
-  .navbar-brand img {
-    width: 60vw; /* Adjust logo size for mobile */
-  }
-
   .phone, .address {
     text-align: center;
     margin-bottom: 10px;
@@ -31,6 +28,33 @@ header {
   .phone a {
     display: block;
     margin-bottom: 5px;
+  }
+
+
+  .carousel-inner {
+    max-height: 390px !important;
+  }
+
+  .large-title {
+    font-size: medium;
+  }
+
+  .svg-banner {
+    height: 20px !important;
+  }
+
+  .action-title {
+    font-size: 2rem !important;
+  }
+
+  .footer {
+    font-size: medium;
+  }
+
+  .church {
+    height: 40vh; /* Adjust height for smaller screens */
+    padding-top: 1;
+    margin-top: 1;
   }
 }
 
@@ -41,13 +65,20 @@ header {
 }
 
 .navbar-brand img {
-  max-width: 100%;
+  max-width: 50vw;
   height: auto;
+  width: 10vw;
 }
 
+@media (max-width: 768px) {
+  .navbar-brand img {
+    width: 15vw; /* Adjust logo size for mobile */
+  }
+
+}
 
 .basic-header__title-wrapper {
-  position: absolute; /* Allows for overlap */
+  position: absolute !important; /* Allows for overlap */
   top: 390px; /* Adjust this value as needed to control the amount of overlap */
   left: 25px;
   right: 0;
@@ -56,27 +87,45 @@ header {
   max-height: 100px;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 768px) {
   .basic-header__title-wrapper {
-    top: 150px;
+    position: absolute !important;
+    top: 200px; /* Adjust for smaller screens */
+    left: 25px;
+    right: 0;
+    z-index: 3; /* Ensure it's on top of the header */
+    text-align: left;
   }
 }
 
 @media (max-width: 430px) {
   .basic-header__title-wrapper {
-    top: 180px; /* Adjust for smaller screens */
+    position: absolute !important;
+    top: 200px; /* Adjust for smaller screens */
+    left: 25px;
+    right: 0;
+    z-index: 3; /* Ensure it's on top of the header */
+    text-align: left;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 360px) {
   .basic-header__title-wrapper {
-    top: 200px; /* Adjust for smaller screens */
+    position: absolute !important;
+    top: 220px;
+    left: 25px;
+    right: 0;
+    z-index: 3; /* Ensure it's on top of the header */
+    text-align: left;
   }
 }
+
+
 
 .large-title {
   position: relative;
   z-index: 2; /* Ensure the title is above everything */
+  text-shadow: 2px 2px 5px rgb(248, 246, 246);
 }
 
 .background-banner {
@@ -99,14 +148,13 @@ header {
 }
 
 .navbar-brand .img {
-  max-height: 10vh;
+  max-height: 20vh;
   width: auto;
 }
 
 /* Spotlight section styles */
 .spotlight-section {
   padding: 50px 0;
-  background-color: #97afd8;
 }
 
 body {
@@ -126,21 +174,19 @@ body {
 }
 
 .church {
-  background-image: url('/assets/img/praise-hands.jpg');
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(151, 175, 216, 0.6)), url('/assets/img/new_praise_hands_gradient.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex-direction: column !important;
   height: 50vh;
   margin: 0%;
   padding-bottom: 0%;
   color: rgb(0, 0, 0);
   max-height: 35%;
-}
-
-
-@media (max-width: 768px) {
-  .church {
-    height: 40vh; /* Adjust height for smaller screens */
-    padding-top: 1;
-    margin-top: 1;
-  }
+  opacity: 1;
+  max-height:400px;
+  color: black !important;
 }
 
 /* Carousel styles */
@@ -150,12 +196,52 @@ body {
 }
 
 .carousel-item {
-  background-color: #97afd8;
+  max-height:655px;
+  background-image: linear-gradient(rgba(151, 175, 216, 0.7), #dcdee5);
 }
 
 #event-image {
   width: 100vw;
 }
 
+.action-section {
+  background-image: linear-gradient( #dcdee5,#97afd8,#4e7dba);
+  padding-bottom: 4rem;
+}
 
+.action-title {
+  font-size: 5rem;
+  font-style:italic;
+}
 
+.footer {
+  background-color:#4e7dba;
+  margin-top: 4rem;
+  padding-top: 2rem;
+  color: black;
+  font-weight: 500;
+  border:0 !important
+}
+
+.footer .h4 {
+  font-size: 2rem;
+}
+
+.footer .container {
+  font-size: 1rem;
+}
+
+.footer .fa {
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  background: #3B5998;
+  color: white;
+}
+
+.footer .fa:hover {
+  opacity: 0.7;
+}
